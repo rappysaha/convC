@@ -5,13 +5,11 @@
 #include <stdint.h>
 #include <float.h>
 
-#define ImgWidth 10
-#define ImgHeight 10
-#define ImgDepth 3
-
-#define SUCCESS 1
-#define FAILURE 0 
+#include "common.h"
+#include "debug.h"
 
 int NormalizeImg(uint8_t NrmVal, float NrmImg[ImgHeight][ImgWidth][ImgDepth], uint8_t OrigImg[ImgHeight][ImgWidth][ImgDepth]);
+
+int convImgFunc(uint8_t strd, float NrmImg[ImgHeight][ImgWidth][ImgDepth], float filter[fHeight][fWidth][fDepth], float conv_img[ImgHeight/stride][ImgWidth/stride]);
 
 #endif
