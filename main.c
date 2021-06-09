@@ -18,8 +18,12 @@ int main ()
     printf("test_val[1][1][0]=%f\n", NrmImg[1][1][0]);
     printf("test_val[1][1][1]=%f\n", NrmImg[1][1][2]);
     printf("test_val[1][1][2]=%f\n", NrmImg[1][1][3]);
-    #endif
+    
     convImgFunc(stride, NrmImg,filter3d,ConvImg);
+    #endif
+    convolution2d_naive(10, 10, 
+                         3, 3,
+                         3, 3);
 
    return 0; 
 }

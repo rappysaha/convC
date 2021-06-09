@@ -9,7 +9,7 @@
 #define fWidth  2
 #define fDepth  3
 
-#define stride 2
+#define stride 2 // window moving parameter
 
 #define SUCCESS 1
 #define FAILURE 0 
